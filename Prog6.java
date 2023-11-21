@@ -171,25 +171,24 @@ public class Prog6 {
         }
 
         public static ArrayList< String> mapToSortedList(HashMap< String, Integer> students) {
-            ArrayList<String> origList = new ArrayList<>();
-            ArrayList<String> sortedList = new ArrayList<>();
+            String[] sortedList = new String[students.size()];
+            int arrIter = 0;            
+            
             
             for (Map.Entry< String, Integer> entry : students.entrySet()) {
-                String className = entry.getKey();
-                origList.add(className);
+                sortedList[arrIter] = entry.getKey();
+                arrIter++;
             }
 
-            for (int i = 0; i < origList.size(); i++) {
-                String tmp = origList.get(i);
-                for (int j = i + 1; j < origList.size(); j++) {
-                    
-                    if (origList.get(j).compareTo(tmp) ==  -1) {
-                        tmp = origList.get(j);
+            for (int i = 0; i < sortedList.length; i++) {
+                for (int j = i + 1; j < sortedList.length; j++) {
+                    if (sortedList[j].compareTo(sortedList[i]) < 0) {
+                        String tmp = sortedList[i];
+                        sortedList[i] = sortedList[j];
+                        sortedList[j] = tmp;
                     }
                 }
-                
-                sortedList.add(tmp);    
-                }
-            return sortedList;
+            }
+            return new ArrayList<>(Arrays.asList(sortedList));
         }
-    }
+}
