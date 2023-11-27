@@ -191,7 +191,8 @@ void printClasses(std::string title, std::unordered_map<std::string, int> studen
     for (int i = 0; i < sortedStudents.size(); i++) {
         for (const auto& it: students) {
             if(it.first == sortedStudents[i])
-            std::cout << it.first << std::setw(29) << std::setfill(' ') << it.second << std::endl;
+                std::cout << std::left << it.first << std::setw(29) << std::setfill(' ') << std::right << it.second << std::endl;
+                //std::cout << it.first << std::setw(29) << std::setfill(' ') << it.second << std::endl;
         }
     }
 }
