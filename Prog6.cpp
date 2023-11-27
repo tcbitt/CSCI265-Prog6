@@ -183,8 +183,8 @@ void printClasses(std::string title, std::unordered_map<std::string, int> studen
     //Title and table formatting
     std::cout << std::setw(12) << "" << title << std::setfill('-') << "" << std::endl << std::endl;
     std::cout << std::left << std::setfill(' ') << std::setw(18) << "Class" << "|";
-    std::cout << std::right << std::setw(18) << "Credits" << std::endl << std::endl;
-    std::cout << std::setfill('-') << std::setw(37) << "" << "" << std::endl;
+    std::cout << std::right << std::setw(18) << "Credits" << std::endl;
+    //std::cout << std::setfill('-') << std::setw(37) << "" << "";
 
     std::vector<std::string> sortedStudents = mapToSortedVec(students);
   
