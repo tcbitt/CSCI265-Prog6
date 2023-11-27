@@ -128,8 +128,7 @@ bool isPartTime(std::unordered_map<std::string, int> students) {
         if (total >= 12)
             return false;
     }
-    if (total <= 0)
-      return false;
+    return true;
 }
 /*
 numOfClasses function - Iterates the map and increments a counter for each entry/class.
