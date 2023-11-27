@@ -26,7 +26,7 @@ int lowerLevelCredits(std::unordered_map<std::string, int>);
 void printClasses(std::string, std::unordered_map<std::string, int>);
 std::vector<std::string> mapToSortedVec(std::unordered_map<std::string, int>);
 
-
+#ifndef COMPILE_MAIN
 int main() {
     //This map is per-student
     std::unordered_map<std::string, int> test =
@@ -56,6 +56,7 @@ int main() {
 
 
 }
+#endif
 /*
 totalCredits function - iterates the map and adds all the values stored for total credits taken.
 
