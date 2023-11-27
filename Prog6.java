@@ -93,7 +93,7 @@ public class Prog6 {
                     return false;
                 }
             }
-            return totalCredits > 0;
+            return true;
         }
 
         public static int numOfClasses(HashMap< String, Integer> students) {
@@ -147,8 +147,8 @@ public class Prog6 {
             System.out.println(sb2.toString() + "\n");
 
             //Create the dashed line
-            String line = new String(new char[40]).replace("\0", "-");
-            System.out.println(line);
+            //String line = new String(new char[40]).replace("\0", "-");
+            //System.out.println(line);
 
             ArrayList< String> sortedList = mapToSortedList(students);
 
