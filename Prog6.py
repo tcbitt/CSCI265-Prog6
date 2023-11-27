@@ -36,7 +36,7 @@ def lowerLevelCredits(students):
     rtn = 0
     for x in students:
         if (int(x[5:]) < 300):
-            rtn += 1
+            rtn += students.get(x)
     return rtn
 
 def printClasses(title, students):
