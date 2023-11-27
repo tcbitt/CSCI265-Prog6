@@ -129,13 +129,13 @@ public class Prog6 {
             int leftPadding = (40 - title.length()) / 2;
 
             //Create the title centered 40 width
-            StringBuilder sb = new StringBuilder();
-
-            for (int i = 0; i < leftPadding; i++) {
-                sb.append(' ');
-            }
-            sb.append(title);
-            System.out.println(sb.toString() + "\n");
+            //StringBuilder sb = new StringBuilder();
+            System.out.println(title + '\n');
+            //for (int i = 0; i < leftPadding; i++) {
+            //0   sb.append(' ');
+            //}
+            //sb.append(title);
+            //System.out.println(sb.toString() + "\n");
 
             //Create the Class and Credit columns
             StringBuilder sb2 = new StringBuilder();
