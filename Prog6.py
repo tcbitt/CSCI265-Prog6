@@ -47,7 +47,7 @@ def printClasses(title, students):
     
     sortedClasses = dict(sorted(students.items()))      
     for x in sortedClasses:
-            print(x.ljust(20) + str(sortedClasses.get(x)).rjust(20)) 
+            print(x.ljust(20) + str(sortedClasses.get(x)).rjust(26)) 
 
 
 def main():
