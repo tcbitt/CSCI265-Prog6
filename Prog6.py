@@ -42,8 +42,8 @@ def lowerLevelCredits(students):
 def printClasses(title, students):
     print(title)
     print()
-    print("Class".ljust(20) + "Credits".rjust(26))
-    print()
+    #print("Class".ljust(20) + "Credits".rjust(26))
+    #print()
     
     sortedClasses = dict(sorted(students.items()))      
     for x in sortedClasses:
